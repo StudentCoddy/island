@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+
+:root {
+  --swiper-pagination-color: #000000;
+  --swiper-pagination-bullet-inactive-color: #b1adad;
+}
+
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  padding-top: 30px;
+}
+
+.headBlock {
+  margin: auto;
+  margin-top: 40px;
+  width: 90%;
+  height: 600px;
+  background-color: #fff;
+  box-shadow: 1px 1px 35px rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.block {
+  padding: 15px 30px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.block h1 {
+  color: rgb(45, 45, 45);
+  text-shadow: 1px 3px 7px rgb(128, 128, 128);
+  font-family: "Caveat", cursive;
+  font-size: 50px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.block p {
+  color: #848484;
+  max-width: 90%;
+  font-size: 22px;
+}
+
+header {
+  background-color: #000;
+  height: 80px;
+  width: 90%;
+  margin: auto;
+  border-radius: 70px;
+  display: flex;
+  padding: 0px 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 70px;
+  /* filter: drop-shadow(1px 1px 10px #ff0000); */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  color: #e72f35c7;
+  transition: 1s;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.cards h3 {
+  font-size: 42px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  padding-bottom: 60px;
+  flex: 100%;
+}
+
+.card {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #a09f9f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 15px 15px 0 0;
+}
+
+.title {
+  background-color: #ffffff;
+  height: max-content;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.title h2 {
+  padding-bottom: 10px;
+  color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/* 
+.q {
+  font-size: 24px;
+  color: aqua;
+} */
+.title a {
+  text-decoration:none;
+  margin-top: 15px;
+  background-color: #c9935694;
+  padding: 7px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #e66b19f5;        
+}
+.title a:hover {
+  background-color: #684824d8 
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+gap: 40px 20px;
+justify-content: center;
+
+}                   
+
+.swiper {
+  width: 800px;
+  height: 500px;
+  
+}
+
+.preview {
+  padding: 160px 0;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.laguna {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+.left {
+}
+
+.laguna-title {
+}
+.laguna-item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: bottom 30px;
+}
+.laguna-item p {
+  max-width: 50%;
+  padding-bottom: 20px;
+}
+.img {
+width: 30px;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right {
+  width: 500px
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.laguna h2 {
+  font-size: 60px;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.product-img {
+  height: 400px;
+  width: 350px;
+  background-position: center;
+  block-size: cover;
+  border-image: url(https://vislandii.com/images/guide/souvenirs/lopapeysa.jpg);
+}
+.product{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  column-gap: 30px;
+  margin: auto;
+  row-gap: 70px;
+}
+.product-card {
+width: 300px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.product-img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.info h3 {
+font-weight: normal;
+text-transform: uppercase;
+text-align: center;
+padding-bottom: 5px;
+}
+.info h3 {
+  text-align: center;
+  padding-top: 20px;
+  opacity: 0.7;
+  font-size: 14px;
+  text-transform:initial;
+}
+
+.info h2 {
+  text-align: center;
+padding-bottom: 20px;
+}
+
+.info p{
+  padding-bottom: 30px;
+}
+
+.basket {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.info select {
+  margin-top: 20px;
+  width: 100%;
+  height: 30px;
+}
+.basket {
+  padding: 15px 0;
+background-color: #6f7c8a88;
+border-radius: 30px;
+
+}
+.product-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.preview h5,
+.product h5 {
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: "Caveat", cursive;
+  font-size: 50px;
+  flex: 1 1 100%;
+}
+/* .con {
+  background-color: #000000;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 70px;
+}
+.con a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+} */
